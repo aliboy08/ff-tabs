@@ -1,4 +1,4 @@
-# ff-tabs
+# FF Tabs v1.0
 
 Tabs with dropdown support on set screen width
 
