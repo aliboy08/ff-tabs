@@ -4,6 +4,8 @@ Tabs with dropdown support on set screen width
 
 `require jquery`
 
+demo https://aliboy08.github.io/ff-tabs/
+
 ```
 settings: {
     nav: string,  // default '.tabs-nav'
