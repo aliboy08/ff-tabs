@@ -10,8 +10,6 @@
 			tabs: '.tabs',
 			same_height: false,
 			show_dropdown_nav: { screen: 768 },
-			on_init: null,
-			after_click: null,
 		}, options );
 		
 		var nav = this.find(settings.nav),
@@ -20,10 +18,6 @@
 			nav_children = nav.find('a'),
 			dropdown_nav,
 			dropdown_nav_trigger;
-			
-		if( typeof settings.on_init === 'function' ) {
-			settings.on_init();
-		}
 		
 		if( settings.same_height || settings.show_dropdown_nav ) {
 	
@@ -138,7 +132,6 @@
 			this_nav_item.addClass('active');
 			
 			if( typeof dropdown_nav_children !== 'undefined' ){
-				console.log('dropdown_nav_trigger', dropdown_nav_trigger);
 				dropdown_nav_trigger.text(this_nav_item.text());
 			}
 			
@@ -146,14 +139,6 @@
 			// Show target tab
 			tabs_children.hide(); // reset
 			target_tab.fadeIn();
-			
-			// After click callback
-			if( typeof settings.after_click === 'function' ) {
-				settings.after_click({
-					this_nav_item: this_nav_item,
-					target_tab: target_tab,
-				});
-			}
 			
 		});
 		
