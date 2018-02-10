@@ -1,0 +1,54 @@
+.tabs-nav {
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.tabs-nav a {
+	background: #eee;
+	padding: 5px;
+	display: inline-block;
+}
+
+.tabs-nav a.active {
+	background: #444;
+	color: #fff;
+}
+
+.tabs {
+	background: #eee;
+	padding: 10px;
+}
+
+.tab {
+	display: none;
+}
+
+.tabs-nav.dropdown {
+	position: relative;
+	display: inline-block;
+	border: 1px solid #ddd;
+	padding: 0;
+	min-width: 100px;
+	cursor: pointer;
+}
+
+.tabs-nav.dropdown .dropdown-container {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+}
+
+.tabs-nav.dropdown .dropdown-trigger {
+	display: block;
+	padding: 5px 10px;
+}
+
+.tabs-nav.dropdown .dropdown-container.show {
+	display: inline-block;
+}
+
+.tabs-nav.dropdown .dropdown-container a {
+	display: block;
+}
