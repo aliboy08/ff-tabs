@@ -2,6 +2,8 @@
 
 Tabs with dropdown support on set screen width
 
+`require jquery`
+
 ```
 settings: {
     nav: string,  // default '.tabs-nav'
